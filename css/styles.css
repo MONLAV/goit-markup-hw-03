@@ -34,7 +34,7 @@ body {
 }
 
 .top-line {
-    border-bottom: solid 2px var(--color-cornflower);
+    border-bottom: solid 1px var(--color-cornflower);
 }
 
 .header {
@@ -51,13 +51,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     width: 50%;
 }
 
 .nav {
     padding: 24px 0 24px 156px;
     column-gap: 76px;
+
 }
 
 .visually-hidden {

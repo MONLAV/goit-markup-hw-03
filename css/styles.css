@@ -310,16 +310,10 @@ body {
 
 /* portfolio */
 
-.filters {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
 
 .list-filters {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 24px;
     margin-bottom: 72px;

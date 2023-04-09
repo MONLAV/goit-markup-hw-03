@@ -280,6 +280,7 @@ body {
 
 
 .text-web-footer {
+    display: inline-block;
     color: var(--color-iris);
     font-family: var(--secondary-font);
     font-weight: 800;

@@ -52,13 +52,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
-}
-
-.nav {
-    padding: 24px 0 24px 156px;
-    column-gap: 76px;
-
 }
 
 .visually-hidden {
@@ -87,6 +80,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: inline-block;
+    margin-right: 76px;
 }
 
 .text-studio {
@@ -99,7 +93,7 @@ body {
 
 .team {
     border: 2px;
-    justify-content: space-between;
+    gap: 24px;
 
 }
 
@@ -112,20 +106,23 @@ body {
 }
 
 .list-advantages {
-    column-gap: 24px;
-    margin-top: 120px;
+    gap: 24px;
 
 }
 
 .container-item {
-    width: 264px;
+    width: calc((100% - 72px) / 4);
 }
 
 .list-activities {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    gap: 24px;
 
+}
+
+.works {
+    width: calc((100% - 48px) / 3);
 }
 
 .list-menu>a {
@@ -137,7 +134,11 @@ body {
     letter-spacing: 0.02em;
     text-align: left;
     display: flex;
-    margin-right: 15px;
+    padding: 24px 0px;
+}
+
+.list-menu:nth-child(-n + 2) {
+    margin-right: 40px;
 }
 
 .list-menu>a:hover,
@@ -176,13 +177,12 @@ body {
     color: var(--color-white);
     height: 600px;
     width: 100%;
+    padding: 188px 0;
 
 }
 
 .hero {
-    padding-top: 188px;
     padding-left: 472px;
-    padding-right: 472px;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -196,32 +196,36 @@ body {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    width: 496px;
+    max-width: 496px;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 331px;
 }
 
 .button-order {
+    border: none;
     background: var(--color-iris);
     color: var(--color-white);
     border-radius: 4px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    margin-left: 331px;
+    cursor: pointer;
 }
 
 .button-order:hover,
 .button-order:focus {
     background: var(--color-ocean);
     color: var(--color-white);
-    cursor: pointer;
+
+}
+
+.first {
+    padding: 120px 0;
 }
 
 .second-header {
@@ -265,13 +269,13 @@ body {
 
 .footer-item {
     width: 264px;
-    padding-top: 100px;
     margin-left: 156px;
 }
 
 .footer {
     height: 312px;
     background-color: var(--color-corporated);
+    padding: 100px 0;
 }
 
 
@@ -283,6 +287,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 16px;
 }
 
 .text-studio-footer {
@@ -309,18 +314,22 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 96px auto 100px auto;
+
 }
 
 .list-filters {
-    width: 586px;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+
+
 }
 
 .button-filters {
     background-color: var(--color-cloud);
     color: var(--color-iris);
-    border-color: var(--color-cornflower);
+    border: 1px solid var(--color-cornflower);
     border-radius: 4px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     font-family: 'Roboto', sans-serif;
@@ -329,18 +338,29 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding: 12px 24px;
+    cursor: pointer;
 }
 
 .button-filters:hover,
 .button-filters:focus {
+    border: 1px solid transparent;
     background-color: var(--color-ocean);
     color: var(--color-white);
-    cursor: pointer;
+
 }
 
 .button-filters:active {
     background-color: var(--color-ocean);
     color: var(--color-white);
+}
+
+img {
+    display: block;
+}
+
+.projects {
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 
 .list-elements {
@@ -373,9 +393,9 @@ body {
 .member-team {
     background-color: var(--color-white);
     border: #ffffff solid 1px;
-    border-radius: 0 0 4% 4%;
+    border-radius: 0 0 4px 4px;
     margin-top: -4px;
-    padding: 16px 32px;
+    padding: 32px 16px;
 
 }
 
@@ -386,7 +406,5 @@ body {
 
 .name,
 .specialty {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    text-align: center;
 }

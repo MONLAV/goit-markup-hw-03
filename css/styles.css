@@ -370,15 +370,12 @@ img {
 
 .member-team {
     background-color: var(--color-white);
-    border: #ffffff solid 1px;
     border-radius: 0 0 4px 4px;
-    margin-top: -4px;
     padding: 32px 16px;
 
 }
 
 .card-team {
-    border-radius: 0 0 4px 4px;
     box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.1);
     width: calc((100% - 24px*3) / 4);
 
